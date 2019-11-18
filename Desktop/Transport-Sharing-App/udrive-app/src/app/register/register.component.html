@@ -1,0 +1,83 @@
+<div class="container">
+  <div class="jumbotron">
+    <h3 class="text-center">Account Registration</h3>
+    <p class="text-center">Register your accout here</p>
+  </div>
+  <div class="row">
+    <div class="offset-3"></div>
+    <div class="col-md-6">
+      <form name="form" #f="ngForm" (submit)="sendUser()" novalidate class="feedback-form">
+        <!-- Email -->
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="text"
+                 id="email"
+                 class="form-control"
+                 name="email"
+                 placeholder="Your email"
+                 [(ngModel)]="model.email" />
+        </div>
+
+        <!-- Name -->
+        <div class="form-group">
+          <label for="name">First Name</label>
+          <input type="text"
+                 id="name"
+                 class="form-control"
+                 name="name"
+                 placeholder="Your name"
+                 [(ngModel)]="model.name" />
+        </div>
+
+        <!-- Surname -->
+        <div class="form-group">
+          <label for="surname">Last Name</label>
+          <input type="text"
+                 id="surname"
+                 class="form-control"
+                 name="surname"
+                 placeholder="Your last name"
+                 [(ngModel)]="model.surname" />
+        </div>
+
+        <!-- Address -->
+        <div class="form-group">
+          <label for="address">Address</label>
+          <input type="text"
+                 id="address"
+                 class="form-control"
+                 name="address"
+                 placeholder="Your address"
+                 [(ngModel)]="model.address" />
+        </div>
+
+        <!-- Tel -->
+        <div class="form-group">
+          <label for="tel">Telephone</label>
+          <input type="text"
+                 id="tel"
+                 class="form-control"
+                 name="tel"
+                 placeholder="Your address"
+                 [(ngModel)]="model.tel" />
+        </div>
+
+        <!-- Password -->
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="text"
+                 id="password"
+                 class="form-control"
+                 name="password"
+                 placeholder="Your password"
+                 [(ngModel)]="model.password" />
+        </div>
+
+        <button type="submit" class="btn btn-info pull-right">
+          <span> Submit</span>
+        </button>
+      </form>
+    </div>
+    <div class="offset-3"></div>
+  </div>
+</div>

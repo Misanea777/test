@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="jumbotron">
+    <h3 class="text-center">Account Registration</h3>
+    <p class="text-center">Register your accout here</p>
+  </div>
+  <div class="row">
+    <div class="offset-3"></div>
+    <div class="col-md-6">
+      <form name="form" #f="ngForm" (submit)="sendUser()" novalidate class="feedback-form">
+        <!-- Email -->
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="text"
+                 id="email"
+                 class="form-control"
+                 name="email"
+                 placeholder="Your email"
+                 [(ngModel)]="model.email" />
+        </div>
+
+        <!-- Password -->
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="text"
+                 id="password"
+                 class="form-control"
+                 name="password"
+                 placeholder="Your password"
+                 [(ngModel)]="model.password" />
+        </div>
+
+        <button type="submit" class="btn btn-info pull-right">
+          <span>Sign in</span>
+        </button>
+      </form>
+    </div>
+    <div class="offset-3"></div>
+  </div>
+</div>
